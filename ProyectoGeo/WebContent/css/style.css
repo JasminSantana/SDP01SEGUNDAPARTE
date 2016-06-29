@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+	div{
+		text-align: center;
+		}
+	#map{
+		width: 50%;
+		height: 98%;
+		left: 5px;
+		position: absolute;
+		}
+	#content{
+		width: 45%;
+		right: 10px;
+		margin: 5px;
+		position: absolute;
+		}

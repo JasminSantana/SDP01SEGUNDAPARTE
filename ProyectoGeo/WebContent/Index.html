@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/uno.js"></script>
+</head>
+<body onload="initialize();">
+<div id="content">
+<div>
+  <p>Do you want to close the route?</p>
+  <p>
+    <label for="y">YES</label>
+    <input id="y" type="radio" name="cerrar" value="YES">
+    <label for="n">NO</label>
+    <input id="n" type="radio" name="cerrar" value="NO" checked="yes">
+  </p>
+  <p>Specify how many months will take to do the route, if you do not specify the default value will be 6 months.</p>
+  <p>Months = <input id="months" type="text"></p>
+  <p>
+  <p>Select the preferred unit of measure</p>
+    <label for="mi">Miles</label>
+    <input id="mi" type="radio" name="measure" value="Miles">
+    <label for="km">Kilometers</label>
+    <input id="km" type="radio" name="measure" value="Km" checked="yes">
+     </p>
+</div>
+<div>
+<input type="button" value="Show" onClick="imprimir();">
+</div>
+<div id="mostrar">Data</div>
+</div>
+<div id="map"></div>
+</body>
+</html>
